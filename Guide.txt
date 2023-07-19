@@ -1,0 +1,36 @@
+USER GUIDE:
+
+The ImAn.py program takes images contained in subfolders within the "folders" directory, imports them into ImageJ for pore area calculation, and extracts tables in .xlsx and .csv formats.
+
+To work correctly, the program requires a "folders" directory, a "tables" directory, and the variables.json file.
+
+- In the "folders" directory, subfolders containing only the images to be imported into ImageJ should be placed. There should be no other file types in the image subfolders, and the image used for setting the scale should not be present.
+
+- If the "tables" directory is not already present, create it. This directory is where the .xlsx and .csv files will be placed after the program's execution.
+
+- The variables.json file should be opened with a text editor (right-click → open with → notepad). The file's structure should be as follows:
+  
+{
+    "distance": 344,
+    "known": 100,
+    "unit": "microns",
+    "threshold": [0, 138],
+    "size": "0-Infinity",
+    "circularity": "0.00-1.00",
+    "exclude": "exclude"
+}
+
+Note: If the variables.json file is lost or deleted, you can create a new text file, copy the content above, and save it with the name variables.json.
+
+All variables in the variables.json file must be provided by the user, who needs to manually obtain them from an image. 
+The "exclude" variable, if included ("exclude": "exclude"), will execute the "exclude on edges" command in the "Analyze Particles" function. 
+If not included ("exclude": ""), the "exclude on edges" command will be deactivated. The images will be automatically converted to 8-bit.
+
+
+
+
+
+
+
+
+

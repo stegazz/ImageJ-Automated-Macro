@@ -1,0 +1,9 @@
+{
+    "distance": 344,
+    "known": 100,
+    "unit": "microns",
+    "threshold": [0, 138],
+    "size": "0-Infinity",
+    "circularity": "0.00-1.00",
+    "exclude": ""
+}

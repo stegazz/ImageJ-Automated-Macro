@@ -1,0 +1,25 @@
+INSTALLATION GUIDE:
+
+Documentation link: https://pyimagej.readthedocs.io/en/latest/
+
+1. Download Python (the code was created with Python 3.10, but versions 3.8 and 3.9 are also suitable).
+
+2. Install the following libraries from the command prompt:
+
+pip install pandas
+pip install pyimagej
+pip install openpyxl
+3. Download Zulu Java from https://www.azul.com/downloads/?version=java-8-lts&package=jdk-fx
+Preferably, download Java 8 or 11, then select your operating system and 64-bit or 32-bit from the dropdown menus.
+To set up the paths, follow the first 5 minutes of this tutorial: https://www.youtube.com/watch?v=DlcsG2i-Gk0&t=234s
+Restart your computer, and to verify the correct installation, type "java -version" in the command prompt.
+If Java is installed correctly, you will see the Java version.
+
+4. Download Maven from https://maven.apache.org/download.cgi. In the link column, select "Binary zip archive" (e.g., apache-maven-3.8.7-bin.zip).
+To set up the paths, follow this tutorial (even if you don't understand the language you can follow it): https://www.youtube.com/watch?v=TRphzbFAi0s&ab_channel=prof.MarcelloMissiroli
+Restart your computer, and to verify the correct installation, type "mvn -v" in the command prompt.
+If Maven is installed correctly, you will see the Maven version.
+
+Note: Perform steps 3 and 4 separately, with a respective restart after each installation. Otherwise, the path modifications might not be processed correctly.
+
+END.
